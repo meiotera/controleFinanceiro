@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contas.css">
+    <title>Document</title>
+</head>
+<body onload="capturaDadosLocalStorage()">
+    
+    <header class="top">
+        <h1 class="title">Controle de Financeiro</h1>
+        <div class="menu">
+            <nav>
+                <a href="">Cadastrar</a>
+                <a href="">Consultar</a>
+            </nav>
+        </div>
+    </header>
+
+<main>
+
+    
+    <section class="formInfo">
+        <form action="">
+            <label for="selectDate">
+                <input type="date" name="data" id="selectDate">
+            </label>           
+
+           <select id="categoria">               
+               <option value="" selected>Selecione uma categoria</option>
+               <option value="1">Alimentação</option>
+               <option value="2">Lazer</option>
+               <option value="3">Transporte</option>
+               <option value="4">Educação</option>               
+           </select>
+
+           <label for="description">
+                <input type="text" id="description" placeholder="Descrição">
+            </label>
+
+            <label for="valor">
+                <input type="number" id="valor" placeholder="Valor R$">
+            </label>
+
+            <button type="submit" class="btnCadastrar">Cadastrar</button>
+        </form>
+    </section>
+
+    <section class="displayInfo">
+        <table>
+            <thead>
+                <tr>
+                    <td>Data</td>
+                    <td>Categoria</td>
+                    <td>Descrição</td>
+                    <td>Valor</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody id="listaDespesas">
+              
+            </tbody>
+        </table>
+    </section>
+
+
+    <div class="modal">
+        <div class="mensageAlert">
+            <div class="text">
+                <h3 class="alertTitle"></h3>
+            </div>
+
+            <button class="btnFechar">Fechar</button>
+
+        </div>
+    </div>
+</main>
+
+    <script src="contas.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+:root{
+    --fontColor: #c0c7c7;
+}
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top{    
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    background-color: rgb(22, 60, 141);
+
+}
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--fontColor);
+}
+.menu nav a {
+    font-size: 2rem;
+    color: var(--fontColor);
+    padding: .8rem;
+}
+.menu nav a:hover{
+    color: yellow;
+}
+
+
+/*main*/
+
+.formInfo {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 5rem;
+}
+.formInfo input, .formInfo select{
+    padding: .8rem;
+    font-size: 1.5rem;
+}
+
+.btnCadastrar {
+    display: block;
+    font-size: 2rem;
+    border: none;
+    background-color: rgb(22, 60, 141);
+    color: white;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-top: 5rem;
+    cursor: pointer;
+}
+.btnCadastrar:hover {
+    background-color: rgba(22, 60, 141, 0.87);
+}
+
+
+/*info*/
+.displayInfo {
+    margin-top: 5rem;
+}
+.displayInfo table {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+.displayInfo table thead {
+    background-color: #c0c7c7;    
+}
+
+.modal{    
+    position: absolute;
+    padding: 2rem;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    background-color: #c0c7c757;
+}
+.modal .mensageAlert {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 8rem;
+    background-color: rgb(247, 249, 253);
+    box-shadow: 5px 5px 5px rgba(51, 51, 51, 0.418);
+    border: 1px solid #333;
+    height: 20rem;
+    width: 40rem;
+    border-radius: 1rem;
+}
+.modal .mensageAlert .text h3 {
+    font-size: 2.3rem;   
+    padding-bottom: 2rem;
+    border-bottom: 1px solid;
+}
+.btnFechar {
+    font-size: 2.5rem;    
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+.btnFechar:hover {    
+    cursor: pointer;
+}
